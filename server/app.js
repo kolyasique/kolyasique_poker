@@ -9,13 +9,14 @@ const http = require('http');
 
 const path = require('path');
 const fs = require('fs');
+const configApp = require('./config/config');
 
 // const BaseRouter = require('./src/routes/api');npm start
 
 // const configApp = require('./config/configApp');
 
 const app = express();
-// configApp(app);
+configApp(app);
 const HOST = process.env.HOST ?? '127.0.0.1';
 const PORT = process.env.PORT ?? 1488;
 
